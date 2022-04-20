@@ -23,7 +23,11 @@ const routes = [
     name: 'About',
     component: About
   },
-  { path: '/loginwithtoken', name: 'loginwithtoken', component: Login },
+  { 
+    path: '/loginwithtoken',
+    name: 'loginwithtoken',
+    component: Login
+  },
 ]
 
 const router = new VueRouter({
