@@ -73,3 +73,8 @@ p {
 .secondary {
     color: var(--secondary);
 }
+
+.shopping-cart-fixed-height {
+    overflow: auto;
+    height: 80vh; 
+}

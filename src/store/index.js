@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-var url;
+const url = "http://localhost:8000/products";
 const headers = { Accept: "application/json" };
 
 export default new Vuex.Store({
@@ -17,8 +17,7 @@ export default new Vuex.Store({
       idToken: ""
     },
     endpoints: {
-      login: "http://localhost:3000/login",
-      products: "http://localhost:8000/products"
+      login: "http://localhost:3000/login"
     },
    },
    getters: {
@@ -48,12 +47,6 @@ export default new Vuex.Store({
       state.user.email =payload.email;
       state.user.idToken =payload.idToken;
      },
-     setUrls(state) {
-       state.endpoints.login = process.env.VUE_APP_AUTH_URL;
-       state.endpoints.products = process.env.VUE_APP_PRODUCTS_URL;
-       url = state.endpoints.products;
-       console.log(process.env);
-     }
    },
    actions: { //asynchronous
      async getProducts(state) {

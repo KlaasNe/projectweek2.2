@@ -2,7 +2,7 @@
 <div class="col-sm-4 item">
   <div class="card text-center" >
     <div>
-      <img :src="item.thumbnail_url" alt="" class="card-img-top grow">
+      <img :src="item.thumbnail_url" alt="" class="card-img-top">
     </div>
     <div class="card-body">
       <h5 class="card-title">{{ item.title }}</h5>
@@ -11,7 +11,7 @@
       <div class="row">
         <p class="col-6 lead">${{ item.price }}</p>
         <p class="col-6">
-          <button class="btn btn-success" :disabled="item.quantity === 0" @click="addToCart(item)">
+          <button class="btn btn-primary" :disabled="item.quantity === 0" @click="addToCart(item)">
             Add to cart
           </button>
         </p>
@@ -54,15 +54,9 @@ export default {
   color: #d17581;
 }
 
-.grow {
-  width: 90%;
-  height: 90%;
-  padding: 15px;
-  transition: all .2s ease-in-out;
-}
-
-.grow:hover {
-  transform: scale(1.1);
+.card-img-top {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .item {

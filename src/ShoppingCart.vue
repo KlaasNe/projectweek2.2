@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="btn btn-primary" data-toggle="modal" data-target="#shoppingCart">
+    <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#shoppingCart">
       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
       ( {{ numInCart }} )
     </button>
@@ -16,7 +16,7 @@
                     &times;
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body shopping-cart-fixed-height">
                     <table class="table">
                         <tbody>
                             <tr v-for="(item,idx) in inCart" :key="idx">
@@ -43,6 +43,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'ShoppingCart',

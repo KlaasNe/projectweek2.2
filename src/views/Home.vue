@@ -1,5 +1,13 @@
 <template>
 <div>
+  
+        <div class="containter">
+            <div class="row">
+                <Item v-for="product in products"
+                :key="product.id"
+                :item="product"/>
+            </div>
+        </div>  
   <section class="jumbotron text-center">
         <div class="container">
           <div class="d-flex"><h1 class="jumbotron-heading primary force-mr-2">EZ Volt</h1><h1 class="secondary">EZ Life</h1></div>

@@ -4,7 +4,17 @@
     <router-link to="/" class="navbar-brand mr-auto">
         <img src="./assets/logo.png" alt="company logo" width="100" height="50">
     </router-link>
-      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav mr-auto">
+        <router-link to="/" tag="li" class="nav-item">
+          <a class="nav-link">Home</a>
+        </router-link>
+        <router-link to="/shop" tag="li" class="nav-item">
+          <a class="nav-link">Shop</a>
+        </router-link>
+        <router-link to="/about" tag="li" class="nav-item">
+          <a class="nav-link">About</a>
+        </router-link>
+      </ul>
       <ul class="nav navbar-nav">
         <router-link to="/" tag="li" v-if="!isAuthenticated" class="nav-item " active-class="active">
           <button @click="onLoginClicked" class="btn btn-outline-primary force-mr-1">Login</button>
