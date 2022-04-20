@@ -38,6 +38,14 @@ body{
     background-color: var(--primary);
 }
 
+.card{
+    border-radius: 1rem;
+}
+
+.card-body {
+    border-radius: 0 0 1rem 1rem;
+}
+
 .force-mr-1 {
     margin-right: 0.5rem;
 }
