@@ -49,12 +49,6 @@
 <script>
 // @ is an alias to /src
 export default {
-  name: 'Home',
-  computed: {
-    products() {
-      return this.$store.state.products;
-    }
-  }
-  
+  name: 'Home'  
 }
 </script>

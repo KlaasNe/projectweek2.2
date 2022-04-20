@@ -18,6 +18,7 @@ export default {
     Footer
   },
   mounted(){
+    this.$store.commit("setUrls");
     this.$store.dispatch("getProducts");
   }
 }
