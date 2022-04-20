@@ -1,6 +1,6 @@
 <template>
-<div class="col-sm-4 item">
-  <div class="card text-center" >
+<div class="col-sm-4 item mb-5">
+  <div class="card text-center pb-3" >
     <div>
       <img :src="item.thumbnail_url" alt="" class="card-img-top">
     </div>
@@ -8,7 +8,7 @@
       <h5 class="card-title">{{ item.title }}</h5>
       <h6 class="card-subtitle mb-2 remain">{{ item.quantity }} left in stock</h6>
       <p class="card-text">{{ item.description | shortDescription }}</p>
-      <div class="row">
+      <div class="row mb-8">
         <p class="col-6 lead">${{ item.price }}</p>
         <p class="col-6">
           <button class="btn btn-primary" :disabled="item.quantity === 0" @click="addToCart(item)">
