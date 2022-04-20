@@ -68,6 +68,10 @@ body{
     margin-right: 1rem;
 }
 
+.header-p-size{
+  max-width: 50%;
+}
+
 .header-size{
   font-size: 5rem;
 }

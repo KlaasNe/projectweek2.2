@@ -5,11 +5,13 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>Contact</h6>
-            <div class="informationfooter">
-            <ul class="footer-links">
+            <div class="informationfooter d-flex justify-content-center
+">
+            <ul class="footer-links d-flex flex-column align-items-center">
                 <p>EZVOLT</p>
-                <p>Buisnesslaan 16/17</p>
+                <p>+32 487069420</p>
                 <p>Brussel - 1000</p>
+                <p>Buisnesslaan 16/17</p>
                 <p>fake-email@ezvolt.be</p>
             </ul> 
             </div>
@@ -17,8 +19,8 @@
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/">Contact Us</a></li>
             </ul>
           </div>
         </div>

@@ -5,13 +5,13 @@
         <img src="./assets/logo.png" alt="company logo" width="100" height="50">
     </router-link>
       <ul class="navbar-nav mr-auto">
-        <router-link to="/" tag="li" class="nav-item">
-          <a class="nav-link">Home</a>
+        <router-link to="/" tag="li" class="nav-item" >
+          <a class="nav-link" >Home</a>
         </router-link>
-        <router-link to="/shop" tag="li" class="nav-item">
+        <router-link to="/shop" tag="li" class="nav-item" >
           <a class="nav-link">Shop</a>
         </router-link>
-        <router-link to="/about" tag="li" class="nav-item">
+        <router-link to="/about" tag="li" class="nav-item" >
           <a class="nav-link">About</a>
         </router-link>
       </ul>
@@ -30,6 +30,7 @@
             </div>
           </div>
         </li>
+        <p>{{active}}</p>
         <li>
           <ShoppingCart />
         </li>
@@ -37,9 +38,9 @@
   </div>
 </nav>
 </template>
-
 <script>
 import ShoppingCart from './ShoppingCart.vue';
+
 export default {
   components: { ShoppingCart },
   name: 'NavHeader',
@@ -52,6 +53,10 @@ export default {
     },
   },
   methods: {
+    setActive(param){
+      console.log(param)
+      this.active = param
+    },
     onLoginClicked() {
       window.location = this.$store.state.endpoints.login;
     },

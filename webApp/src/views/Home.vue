@@ -3,7 +3,7 @@
   <section class="jumbotron text-center header-background-image">
         <div class="container">
           <div class="d-flex"><h1 class="jumbotron-heading primary force-mr-2 header-size">EZ Volt</h1><h1 class="secondary header-size">EZ Life</h1></div>
-          <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas tenetur labore alias soluta debitis provident sed quidem! Fugiat voluptatem minima totam velit odio in, doloremque quia quisquam quaerat repellendus.</p>
+          <p class="lead text-muted header-p-size m-2">We develop the product of your future.</p>
         </div>
   </section>
 
