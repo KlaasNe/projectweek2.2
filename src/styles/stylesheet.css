@@ -1,0 +1,67 @@
+:root {
+    --primary: rgb(0, 85, 145);
+    --primary-dark: rgb(0, 62, 106);
+    --secondary: rgb(23, 76, 79);
+    --accent: rgb(253, 231, 100);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn-primary {
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-primary:focus {
+    background-color: var(--primary);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.force-mr-1 {
+    margin-right: 0.5rem;
+}
+
+.force-mr-2 {
+    margin-right: 1rem;
+}
+
+.jump {
+    transition: all .2s ease-in-out;
+  }
+  
+.jump:hover {
+    transform: translateY(-0.5rem);
+  }
+
+.primary {
+    color: var(--primary);
+}
+
+p {
+    text-align: left;
+}
+
+.secondary {
+    color: var(--secondary);
+}
