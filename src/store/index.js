@@ -4,7 +4,6 @@ import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex)
 
-var url;
 const headers = { Accept: "application/json" };
 
 export default new Vuex.Store({
@@ -52,9 +51,9 @@ export default new Vuex.Store({
      },
    },
    actions: { //asynchronous
-     async getProducts(state) {
-       const products = await fetch(url, { headers });
-       const prods = await products.json();
+      async getProducts(state) {
+       const pds = await fetch(process.env.VUE_APP_PRODUCTS_URL, { headers });
+       const prods = await pds.json();
        state.commit("setProducts", prods);
        console.log(prods);
      }
