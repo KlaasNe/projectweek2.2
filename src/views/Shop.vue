@@ -7,6 +7,8 @@
                 :item="product"/>
             </div>
         </div>  
+      
+    
     </div>
 </template>
 
