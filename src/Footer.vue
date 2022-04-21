@@ -3,7 +3,7 @@
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-6 col-md-7" style="margin-left: -1%">
             <h6>Contact</h6>
             <div class="informationfooter d-flex justify-content-center
 ">
@@ -12,15 +12,16 @@
                 <p>+32 487069420</p>
                 <p>Brussel - 1000</p>
                 <p>Buisnesslaan 16/17</p>
-                <p>fake-email@ezvolt.be</p>
+                <p><a href="mailto:fake-email@ezvolt.be">fake-email@ezvolt.be</a></p>
             </ul> 
             </div>
           </div>
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
+              <li><a href="/shop">Shop</a></li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="/">Contact Us</a></li>
+              <li><a href="mailto:fake-email@ezvolt.be">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -35,7 +36,7 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
+              <li><a class="github" href="https://github.com/KlaasNe/projectweek2.2"><i class="fa fa-github"></i></a></li>
             </ul>
           </div>
         </div>

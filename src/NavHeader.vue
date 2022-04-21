@@ -6,13 +6,13 @@
     </router-link>
       <ul class="navbar-nav mr-auto">
         <router-link to="/" tag="li" class="nav-item" >
-          <a class="nav-link" >Home</a>
+          <a class="nav-link" @click="setActive('home')" :style="{ color: (active === 'home')?'black':'' }">Home</a>
         </router-link>
         <router-link to="/shop" tag="li" class="nav-item" >
-          <a class="nav-link">Shop</a>
+           <a class="nav-link" @click="setActive('shop')" :style="{ color: (active === 'shop')?'black':'' }">Shop</a>
         </router-link>
         <router-link to="/about" tag="li" class="nav-item" >
-          <a class="nav-link">About</a>
+          <a class="nav-link" @click="setActive('about')" :style="{ color: (active === 'about')?'black':'' }">About</a>
         </router-link>
       </ul>
       <ul class="nav navbar-nav">
@@ -30,7 +30,6 @@
             </div>
           </div>
         </li>
-        <p>{{active}}</p>
         <li>
           <ShoppingCart />
         </li>
@@ -40,10 +39,15 @@
 </template>
 <script>
 import ShoppingCart from './ShoppingCart.vue';
-
+ 
 export default {
   components: { ShoppingCart },
   name: 'NavHeader',
+  data() {
+    return {
+      active: "home"
+    }
+  },
   computed: {
     userEmail() {
       return this.isLoggedIn ? this.currentUser.email : ''
@@ -54,7 +58,6 @@ export default {
   },
   methods: {
     setActive(param){
-      console.log(param)
       this.active = param
     },
     onLoginClicked() {

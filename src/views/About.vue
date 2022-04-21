@@ -16,11 +16,11 @@
       <div class="container py-5">
         <div class="row align-items-center mb-5">
           <div class="col-lg-6 order-2 order-lg-1">
-            <img src="../assets/appicon.png" alt="" style="width: 64px">
+            <img src="../assets/icon_klein_gsm.png" alt="" style="width: 64px">
             <h2 class="font-weight-light">Our application</h2>
             <p class="text-muted">By now you all know that we provide a highly advanced battery. But we are more than just that! We also provide an innovative software. Our application enables you to not only supervise your battery  but to fully communicate with it. We provide this app so your battery is always in your hands. With one tap you can enable/disable, check or order your batteries.</p>
           </div>
-          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="../assets/clip-programming.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="../assets/appicon.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
         </div>
         <div class="row align-items-center">
           <div class="col-lg-5 px-5 mx-auto"><img src="../assets/clip-91.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>

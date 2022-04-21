@@ -1,10 +1,10 @@
 <template>
-<div class="col-sm-4 item mb-5">
+<div class="col-sm-4 item mb-5 jump">
   <div class="card text-center pb-3" >
-    <div>
-      <img :src="item.thumbnail_url" alt="" class="card-img-top">
+    <div style="height: 350px;">
+      <img :src="item.thumbnail_url" alt="" class="card-img-top mt-2" style="border-radius: 25px;max-height: 350px;width: auto">
     </div>
-    <div class="card-body">
+    <div class="card-body" style="">
       <h5 class="card-title">{{ item.title }}</h5>
       <h6 class="card-subtitle mb-2 remain">{{ item.quantity }} left in stock</h6>
       <p class="card-text">{{ item.description | shortDescription }}</p>
@@ -18,6 +18,8 @@
       </div>
     </div>
   </div>
+  
+
 </div>
 </template>
 
