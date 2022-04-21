@@ -12,6 +12,45 @@
   background-size: cover;
 }
 
+.nav-link {
+  font-size: x-large;
+  margin-right: 24px;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+#homepage_icon_1{
+    content: url('../assets/batteryIcon.png');
+    max-width: 130px;
+}
+
+#homepage_icon_1:hover{
+    content: url('../assets/batteryIcon_active.png');
+    max-width: 130px;
+}
+
+#homepage_icon_2{
+    content: url('../assets/phoneIcon.png');
+    max-width: 130px;
+}
+
+#homepage_icon_2:hover{
+    content: url('../assets/phoneIcon_active.png');
+    max-width: 130px;
+}
+
+#homepage_icon_3{
+    content: url('../assets/leafIcon.png');
+    max-width: 130px;
+}
+
+#homepage_icon_3:hover{
+    content: url('../assets/leafIcon_active.png');
+    max-width: 130px;
+}
+
 .accent {
     color: var(--accent);
 }
@@ -96,6 +135,7 @@ body {
 p {
     text-align: left;
 }
+
 
 .secondary {
     color: var(--secondary);
