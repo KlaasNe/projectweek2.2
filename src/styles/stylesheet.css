@@ -99,6 +99,19 @@ body {
     height: 128px;
 }
 
+.card-image{
+  height: 350px ;
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  transition-duration: 0.2s;
+}
+
+.card-image:hover{
+  background-size: 220px;
+}
+
+
 .force-mr-1 {
     margin-right: 0.5rem;
 }
